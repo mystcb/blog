@@ -1,0 +1,8 @@
+# VS Code Files
+.vscode
+
+# Do not upload the build folder
+public
+
+# DS_Store Files Ignore
+.DS_Store
