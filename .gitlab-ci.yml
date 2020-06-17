@@ -2,6 +2,9 @@ stages:
 - build
 - purge
 
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
 image: hub.docker.faereal.net:443/tokonatsu/docker/hugo-builder:latest
 
 hugo build live:
