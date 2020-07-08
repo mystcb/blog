@@ -24,7 +24,7 @@ disableLanguages        = [""]
   socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
 
 [params.meta]
-	description         = "Some text below. Powered by Hugo."
+	description         = "The musings of a Cloud Solutions Architect, AWS Subject Matter Expert, and organiser of Tokonatsu, a Japanese Culture Festival"
 	author              = "Colin Barker"
 	favicon             = false
 	svg                 = true
@@ -41,7 +41,7 @@ disableLanguages        = [""]
 
 [params.intro]
 	header                = "Colin Barker"
-	paragraph             = "Cloud Consultant"
+	paragraph             = "Cloud Solutions Architect and AWS Subject Matter Expert (SME)"
 	rssIntro              = true
 	socialIntro           = true
 	hideWhenSingleColumn  = false
@@ -54,7 +54,7 @@ disableLanguages        = [""]
 		alt                 = "Colin Barker"
 
 [params.sidebar]
-  about               = "A cloud solutions architect, geek, tinkerer, and geocacher."
+  about               = "A cloud solutions architect, AWS SME, geek, tinkerer, and geocacher."
   postAmount          = 5
   categories          = true
   categoriesByCount   = true
