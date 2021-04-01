@@ -1,0 +1,46 @@
+<!--
+    Inside Double Brackets:
+    fancybox2 path="path" caption="caption" gallery="gallery"
+    fancybox2 "path" "caption" "gallery"
+    # of Params: 2-3
+    Positional or Named
+    position 0, name: path
+        Name of the path and file including the file extension
+    position 1, name: caption
+        Text for the caption of the image
+    position 2, name: gallery
+        Name of the gallery the image should be included in
+-->
+{{ $numOfParams := len .Params}}
+{{ if and (ge $numOfParams 2) (le $numOfParams 3) }}
+  {{ if .IsNamedParams }}
+    {{ $.Scratch.Set "path" (.Get "path") }}
+    {{ $.Scratch.Set "caption"  (.Get "caption") }}
+    {{ $.Scratch.Set "gallery" (.Get "gallery") }}
+  {{ else }}
+    {{ $.Scratch.Set "path" (.Get 0) }}
+    {{ if ge $numOfParams 2 }}
+      {{ $.Scratch.Set "caption" (.Get 1) }}
+    {{ else }}
+      {{ $.Scratch.Set "caption" "" }}
+    {{ end }}
+    {{ if ge $numOfParams 3 }}
+      {{ $.Scratch.Set "gallery" (.Get 2) }}
+    {{ else }}
+      {{ $.Scratch.Set "gallery" ""}}
+    {{ end }}
+  {{ end }}
+  {{ $.Scratch.Set "structType" "shortcode" }}
+  {{ $path := $.Scratch.Get "path" }}
+  {{ if eq $path "date" }}
+    {{ $.Scratch.Set "path" "/img/" }}
+    {{ $.Scratch.Add "path" (.Page.Date.Format "2006/01") }}
+  {{ end }}
+  {{ $path := $.Scratch.Get "path" }}
+  {{ $caption  := $.Scratch.Get "caption" }}
+  {{ $gallery := $.Scratch.Get "gallery" }}
+  <figure>
+    <a data-fancybox="{{ $gallery }}" href="{{ $path }}" data-caption="{{ $caption }}"><img src="{{ $path  }}"></a>
+    <figcaption>{{ $caption }}</figcaption>
+  </figure>
+{{ end }}

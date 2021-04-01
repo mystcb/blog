@@ -23,7 +23,7 @@ creation of a [Virtual Portal](https://www.tokonatsu.org.uk/2020/) with an
 online created [Matsuri](https://en.wikipedia.org/wiki/Japanese_festivals). This
 included a virtual version of our Japanese Virtual [Wish Tree](https://en.wikipedia.org/wiki/Wish_tree).
 
-{{< fancybox path="https://static.colinbarker.me.uk/img/blog/2021/03/" file="lennart-jonsson-0nc0_v-PRUg-unsplash.jpg" caption="Photo by Lennart Jönsson (@lenjons) on Unsplash" gallery="gallery" >}}
+{{< fancybox2 path="https://static.colinbarker.me.uk/img/blog/2021/03/lennart-jonsson-0nc0_v-PRUg-unsplash.jpg" caption="Photo by Lennart Jönsson (@lenjons) on Unsplash" gallery="gallery" >}}
 
 [Tanabata](https://en.wikipedia.org/wiki/Tanabata) which is also known as the
 Star Festival, celebrates the meeting of the deities Orihime and Hikoboshi. A
@@ -189,7 +189,7 @@ This isn't very friendly! With the use of [Custom Domains](https://docs.aws.amaz
 we are able to choose our own user-friendly domain and map it to our API
 endpoint, finishing off the whole package.
 
-{{< fancybox path="https://static.colinbarker.me.uk/img/blog/2021/03/" file="custom-domain.png" caption="The Custom Domain settings on API Gateway" gallery="gallery" >}}
+{{< fancybox2 path="https://static.colinbarker.me.uk/img/blog/2021/03/custom-domain.png" caption="The Custom Domain settings on API Gateway" gallery="gallery" >}}
 
 ### Final Words
 

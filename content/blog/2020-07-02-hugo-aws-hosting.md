@@ -102,4 +102,4 @@ I do have to call out [ExNet](https://www.exnet.com/index.html) and [Damon](http
 for helping me at the start. Looking after my desktop box inside your ISP! That
 however, will be a story for another day!
 
-{{< fancybox path="https://static.colinbarker.me.uk/img/blog/2020/07/" file="faereal-server.jpg" caption="The original Faereal Server" gallery="gallery" >}}
+{{< fancybox2 path="https://static.colinbarker.me.uk/img/blog/2020/07/faereal-server.jpg" caption="The original Faereal Server" gallery="gallery" >}}

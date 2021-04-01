@@ -33,7 +33,7 @@ screenshots! (And somehow made them low quality!)
 
 ### Aurora Serverless v2
 
-{{< fancybox path="https://static.colinbarker.me.uk/img/blog/2020/12/" file="serverless-v2.png" caption="Screenshot of the Aurora Serverless v2 bullet points" gallery="gallery" >}}
+{{< fancybox2 path="https://static.colinbarker.me.uk/img/blog/2020/12/serverless-v2.png" caption="Screenshot of the Aurora Serverless v2 bullet points" gallery="gallery" >}}
 
 Quite a significant change to the original [Aurora Serverless (now v1)](https://aws.amazon.com/rds/aurora/serverless/)
 service, introducing additional features which opens the usage of this database
@@ -54,7 +54,7 @@ near future.
 
 ### Bablefish for Aurora PostgreSQL
 
-{{< fancybox path="https://static.colinbarker.me.uk/img/blog/2020/12/" file="bablefish.png" caption="Screenshot of the AWS Bablefish for Aurora PostgreSQL announcement" gallery="gallery" >}}
+{{< fancybox2 path="https://static.colinbarker.me.uk/img/blog/2020/12/bablefish.png" caption="Screenshot of the AWS Bablefish for Aurora PostgreSQL announcement" gallery="gallery" >}}
 
 Announced as an open source (Apache-2.0) project, [Bablefish for Aurora PostgreSQL](https://aws.amazon.com/rds/aurora/babelfish/)
 is a welcome addition to any DBA, Engineer, and Solutions Architect's bag of
@@ -83,7 +83,7 @@ MySQL compatible one for assisting with the move into Aurora?
 
 ### AWS CloudShell
 
-{{< fancybox path="https://static.colinbarker.me.uk/img/blog/2020/12/" file="aws-cloud-shell.png" caption="Screenshot of AWS CloudShell running" gallery="gallery" >}}
+{{< fancybox2 path="https://static.colinbarker.me.uk/img/blog/2020/12/aws-cloud-shell.png" caption="Screenshot of AWS CloudShell running" gallery="gallery" >}}
 
 Another welcome addition to the AWS Console, [AWS CloudShell](https://aws.amazon.com/cloudshell/)
 is just the missing item that allows operators of AWS to quickly get to a CLI
