@@ -24,11 +24,11 @@ jobs:
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
 
       - name: Build Live Site
-        if: contains( github.ref, 'master')
+        if: contains( github.ref, 'main')
         run: hugo --baseURL https://colinbarker.me.uk/
 
       - name: Deploy Live Site
-        if: contains( github.ref, 'master')
+        if: contains( github.ref, 'main')
         run: aws s3 sync --delete --acl public-read public s3://colinbarker.me.uk
 
   cloudflare_purge_cache:
