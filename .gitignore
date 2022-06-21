@@ -6,3 +6,6 @@ public
 
 # DS_Store Files Ignore
 .DS_Store
+
+# Hugo Specific Files
+.hugo_build.lock
