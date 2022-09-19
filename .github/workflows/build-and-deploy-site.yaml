@@ -9,16 +9,20 @@ jobs:
   hugo_build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout Code
+        id: code-checkout
+        uses: actions/checkout@v3
         with:
           submodules: recursive
 
       - name: Setup Hugo
+        id: hugo-setup
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.91.2'
 
       - name: Configure AWS Credentials
+        id: aws-credentials-configure
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -26,18 +30,43 @@ jobs:
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
 
       - name: Build Live Site
+        id: hugo-site-build
         if: contains( github.ref, 'main')
         run: hugo --baseURL https://colinbarker.me.uk/
 
+      - name: Set Deploy Status
+        id: deploy-status-start
+        uses: bobheadxi/deployments@v1
+        with:
+          step: start
+          token: ${{ secrets.GIHUB_TOKEN }}
+          env: Prod
+          ref: ${{ github.ref }}
+
       - name: Deploy Live Site
+        id: aws-s3-deploy
         if: contains( github.ref, 'main')
         run: aws s3 sync --delete --acl public-read public s3://colinbarker.me.uk
+
+      - name: Finish Deploy
+        id: deploy-status-finish
+        uses: bobheadxi/deployments@v1
+        if: always()
+        with: 
+          step: finish
+          token: ${{ secrets.GITHUB_TOKEN }}
+          env: Prod
+          ref: ${{ github.ref }}
+          status: ${{ job.status }}
+          deployment_id: ${{ steps.deploy-status-start.outputs.deployment_id }}
+          env_url: https://colinbarker.me.uk/
 
   cloudflare_purge_cache:
     runs-on: ubuntu-latest
     needs: [ hugo_build_and_deploy ]
     steps:
       - name: Clear CloudFlare cache
+        id: cloudflare-clear-cache
         env:
           CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
           CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
