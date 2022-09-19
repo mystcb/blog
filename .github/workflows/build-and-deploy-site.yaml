@@ -39,7 +39,7 @@ jobs:
         uses: bobheadxi/deployments@v1
         with:
           step: start
-          token: ${{ secrets.GIHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           env: Prod
           ref: ${{ github.ref }}
 
