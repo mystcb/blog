@@ -1,6 +1,6 @@
 baseurl                 = "https://colinbarker.me.uk/"
 languageCode            = "en-gb"
-title                   = "Colin Barker: Cloud Consultant"
+title                   = "Colin Barker: AWS Lead Certification SME, AWS Ambassador, and Cloud Consultant"
 theme                   = "hugo-future-imperfect-slim"
 paginate                = 3
 disqusShortname         = ""
