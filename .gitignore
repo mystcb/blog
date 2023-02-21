@@ -9,3 +9,4 @@ public
 
 # Hugo Specific Files
 .hugo_build.lock
+resources
