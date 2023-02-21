@@ -27,7 +27,7 @@ params:
         lastUpdated: Jan 02, 2006 15:04 BST    
 
     sidebar:
-        emoji: 🍥
+        emoji: 
         subtitle: Cloud Solutions Architect, AWS Subject Matter Expert (SME), AWS Ambassador, and Chairman of Tokonatsu, a Japanese Culture Festival.
         avatar:
             enabled: true
