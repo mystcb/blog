@@ -28,7 +28,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: The musings of a Cloud Solutions Architect, AWS Subject Matter Expert, and organiser of Tokonatsu, a Japanese Culture Festival.
+        subtitle: Cloud Solutions Architect, AWS Subject Matter Expert (SME), AWS Ambassador, and Chairman of Tokonatsu, a Japanese Culture Festival.
         avatar:
             enabled: true
             local: true
@@ -84,4 +84,34 @@ menu:
           name: Twitter
           url: https://twitter.com/mystcb
           params:
-              icon: brand-twitter        
+              icon: brand-twitter    
+
+        - identifier: flickr
+          name: Twitter
+          url: https://flickr.com/photos/mystcb
+          params:
+              icon: brand-flickr   
+
+        - identifier: linkedin
+          name: Twitter
+          url: https://linkedin.com/in/colinbarker
+          params:
+              icon: brand-linkedin
+
+        - identifier: facebook
+          name: Twitter
+          url: https://facebook.com/mystcb
+          params:
+              icon: brand-facebook
+
+        - identifier: instagram
+          name: Twitter
+          url: https://instagram.com/mystcb
+          params:
+              icon: brand-instagram
+
+        - identifier: youtube
+          name: Twitter
+          url: https://youtube.com/mystcb
+          params:
+              icon: brand-youtube
