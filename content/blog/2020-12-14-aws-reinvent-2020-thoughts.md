@@ -29,7 +29,7 @@ Sorry for the bad quality screenshots, unlike a real event where I would
 remember my camera, I spent most of it trying to remember how to take
 screenshots! (And somehow made them low quality!)
 
-### Aurora Serverless v2
+## Aurora Serverless v2
 
 {{< fancybox2 path="https://static.colinbarker.me.uk/img/blog/2020/12/serverless-v2.png" caption="Screenshot of the Aurora Serverless v2 bullet points" gallery="gallery" >}}
 
@@ -50,7 +50,7 @@ near future.
 - [Sign up for Early Access](https://pages.awscloud.com/AmazonAuroraServerlessv2Preview.html)
 - [Aurora Serverless v2 Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-2.html)
 
-### Bablefish for Aurora PostgreSQL
+## Bablefish for Aurora PostgreSQL
 
 {{< fancybox2 path="https://static.colinbarker.me.uk/img/blog/2020/12/bablefish.png" caption="Screenshot of the AWS Bablefish for Aurora PostgreSQL announcement" gallery="gallery" >}}
 
@@ -79,7 +79,7 @@ MySQL compatible one for assisting with the move into Aurora?
 - [Sign up for Early Access](https://pages.awscloud.com/Babelfish-for-Aurora-PostgreSQL.html)
 - [Open source home page](https://babelfish-for-postgresql.github.io/babelfish-for-postgresql/)
 
-### AWS CloudShell
+## AWS CloudShell
 
 {{< fancybox2 path="https://static.colinbarker.me.uk/img/blog/2020/12/aws-cloud-shell.png" caption="Screenshot of AWS CloudShell running" gallery="gallery" >}}
 
@@ -108,7 +108,7 @@ back pocket for any event, will make your life a lot easier!
 - [CloudShell Features](https://aws.amazon.com/cloudshell/features/)
 - [CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html)
 
-### Conclusion
+## Conclusion
 
 As always, there was a lot to take in, and I only barely scratched the surface.
 I'd recommend you look at some of AWS's Blogs to see all of the other

@@ -13,7 +13,7 @@ categories:
 image: https://static.colinbarker.me.uk/img/blog/2021/03/wishtree.jpg
 ---
 
-### What is it?
+## What is it?
 
 During the COVID-19 Pandemic, [Tokonatsu Festival](https://www.tokonatsu.org.uk)
 needed to run a virtual online only event. One of the many ideas included the
@@ -46,7 +46,7 @@ was written by the Co-Vice Chair, Adam Hay. This used:
 The code for which is available on the [Tokonatsu GitHub](https://github.com/TokonatsuFestival)
 under the [WishTreeApplication](https://github.com/TokonatsuFestival/WishTreeApplication).
 
-### Serverless Framework
+## Serverless Framework
 
 - https://www.serverless.com/
 
@@ -55,7 +55,7 @@ services like AWS. You use a combination of [YAML](https://en.wikipedia.org/wiki
 and a [CLI](https://en.wikipedia.org/wiki/Command-line_interface) to control,
 manage, maintain, and operate your application.
 
-#### Serverless Configuration File
+### Serverless Configuration File
 
 This controlled from the [serverless.yaml](https://github.com/TokonatsuFestival/WishTreeApplication/blob/main/api/serverless.yml)
 file within the `api` folder, and here is a quick breakdown of the file
@@ -83,7 +83,7 @@ The `provider` section is where we start to define how the Serverless Framework
 will interact with the destination, and which specific codebase you are running.
 In this instance, we are using AWS with the NodeJS version of 12.x.
 
-#### IAM Permissions
+### IAM Permissions
 
 To ensure access to the [DynamoDB](https://aws.amazon.com/dynamodb/) table,
 we can define permissions in a new role which can be assigned to the [Lambda](https://aws.amazon.com/lambda/)
@@ -104,7 +104,7 @@ iam:
           - arn:aws:dynamodb:*:*:table/${file(./config.${opt:stage, self:provider.stage, 'dev'}.json):WISH_TREE_TAGS_TABLE}
 ```
 
-#### The Functions
+### The Functions
 
 Each API endpoint we need to define will need to have a function to go along
 with it. In this case, we can see the `getTagsForWishTree` function, that is
@@ -140,7 +140,7 @@ config asks for a `path` value of `getTagsForWishTree` using the HTTP method of
 headers are set. This ensures that browsers know which resources it should
 permit to be loaded, and which ones it shouldn't.
 
-#### The Resources
+### The Resources
 
 This is where we can get a little creative, as the Serverless Framework allows
 us to include other non-Serverless Framework resource as part of our deployment,
@@ -173,7 +173,7 @@ being enabled to ensure that the wish tree tags are secured for our use only. A
 small call out to the [AWS Well-Architected Framework's](https://aws.amazon.com/architecture/well-architected/)
 Security Pillar!
 
-#### What about AWS CloudFront?
+### What about AWS CloudFront?
 
 Typically an [AWS API Gateway](https://aws.amazon.com/api-gateway/) uses it's
 own naming system and stage information to generate the API Endpoint, which
@@ -189,7 +189,7 @@ endpoint, finishing off the whole package.
 
 {{< fancybox2 path="https://static.colinbarker.me.uk/img/blog/2021/03/custom-domain.png" caption="The Custom Domain settings on API Gateway" gallery="gallery" >}}
 
-### Final Words
+## Final Words
 
 The full setup instructions on how to build your own Wishtree application are
 available on the [WishTreeApplication](https://github.com/TokonatsuFestival/WishTreeApplication)
