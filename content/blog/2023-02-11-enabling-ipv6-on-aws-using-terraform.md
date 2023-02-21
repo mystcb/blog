@@ -11,9 +11,7 @@ tags:
   - infracost
 categories:
   - aws
-images:
-  - src: https://static.colinbarker.me.uk/img/blog/2023/02/nasa-Q1p7bh3SHj8-unsplash.jpg
-    alt: Logical Layout of Blog Setup
+image: https://static.colinbarker.me.uk/img/blog/2023/02/nasa-Q1p7bh3SHj8-unsplash.jpg
 ---
 
 Header photo by [NASA](https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Q1p7bh3SHj8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

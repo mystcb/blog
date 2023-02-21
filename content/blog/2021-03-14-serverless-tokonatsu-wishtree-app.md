@@ -10,9 +10,7 @@ tags:
 categories:
   - tokonatsu
   - aws
-images:
-  - src: https://static.colinbarker.me.uk/img/blog/2021/03/wishtree.jpg
-    alt: The Tokonatsu Wish Tree
+image: https://static.colinbarker.me.uk/img/blog/2021/03/wishtree.jpg
 ---
 
 ### What is it?

@@ -11,9 +11,7 @@ tags:
   - cloudflare
 categories:
   - aws
-images:
-  - src: https://static.colinbarker.me.uk/img/blog/2020/07/diagram.png
-    alt: Logical Layout of Blog Setup
+image: https://static.colinbarker.me.uk/img/blog/2020/07/diagram.png
 ---
 
 Seems pretty simple, a [CloudFlare](https://www.cloudflare.com) front end, with

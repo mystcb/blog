@@ -9,9 +9,7 @@ tags:
   - 2020
 categories:
   - aws
-images:
-  - src: https://static.colinbarker.me.uk/img/blog/2020/12/reinvent-logo.png
-    alt: AWS re:Invent Logo
+image: https://static.colinbarker.me.uk/img/blog/2020/12/reinvent-logo.png
 ---
 
 Having been extremely lucky that [DevOpsGroup](https://www.devopsgroup.com) do
