@@ -42,7 +42,7 @@ jobs:
         uses: bobheadxi/deployments@v1
         with:
           step: start
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.REPO_TOKEN }}
           env: Prod
           ref: ${{ github.ref }}
 
@@ -57,7 +57,7 @@ jobs:
         if: always()
         with: 
           step: finish
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.REPO_TOKEN }}
           env: Prod
           ref: ${{ github.ref }}
           status: ${{ job.status }}
