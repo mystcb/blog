@@ -49,7 +49,7 @@ jobs:
       - name: Deploy Live Site
         id: aws-s3-deploy
         if: contains( github.ref, 'main')
-        run: aws s3 sync --delete public s3://website-colins-blog
+        run: aws s3 sync --delete --acl public-read public s3://website-colins-blog
 
       - name: Finish Deploy
         id: deploy-status-finish
