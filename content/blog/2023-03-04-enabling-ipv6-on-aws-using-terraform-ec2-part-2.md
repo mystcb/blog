@@ -34,14 +34,14 @@ This phase used during a presentation about Scaling SQL Servers way back in 2006
 
 It describes the idea that servers can be two types:
 
-- **Pets**: These are your pride and joys, there is just one Oz the Cat that sits on your lap while writing blog posts about IPv6, you look after them, nurture them, and you deal with everything that comes their way as and when it happens.
+- **Pets**: These are your pride and joys, there is just one [Oz the Cat that sits on your lap while writing blog posts](#oz-the-cat) about IPv6, you look after them, nurture them, and you deal with everything that comes their way as and when it happens.
 - **Cattle**: You have a farm, you have a vast amount of animals that help you produce several products that you sell to the market. If one of those animals becomes an issue, you "replace" them. No sentimental attachment.
 
 I will say, this analogy will probably not last the test of time - the latter "Cattle" explanation can upset a few people for different reasons and you probably will see this change in the future. Hoping for something like _"Cooker vs Food"_ or _"House vs Tent"_, but I can't see that happening any time soon!
 
 So with that in mind, you can see the following:
 
-- **Pet Instances**: They have a set hostname, they have had loads of love, care, and attention given to them. When they go wrong, you investigate, identify the issues, remediate, and bring back to health. They also make lots of noises when you need to give them attention. (Yes, Oz is meowing at me at the moment!)
+- **Pet Instances**: They have a set hostname, they have had loads of love, care, and attention given to them. When they go wrong, you investigate, identify the issues, remediate, and bring back to health. They also make lots of noises when you need to give them attention. (Yes, [Oz is meowing at me at the moment](#oz-the-cat)!)
 - **Cattle Instances**: They have a randomly generated unique identifier, you keep the safe and secure, but once the instance starts to fail, you quickly take them out of the loop, and replace with a healthy instance. The failed instance, you just get rid of.
 
 ## Starting Point
@@ -297,3 +297,9 @@ However, we are reminded here why pet instances are just that, sometimes they ca
 Hopefully I will continue this IPv6 series soon, where I will go over a number of other services - to see if we can't push forward with the IPv6 transition.
 
 Any comments or queries will be greatly appreciated!
+
+## Oz The Cat
+
+For anyone that is wondering, this is Oz, he is a lovely cat!
+
+{{< fancybox2 path="https://static.colinbarker.me.uk/img/blog/2023/03/IPv6EC2InstanceOzTheCat.jpg" caption="This is Oz!" gallery="gallery" >}}
