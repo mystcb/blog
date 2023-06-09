@@ -28,7 +28,7 @@ params:
 
     sidebar:
         emoji: 
-        subtitle: Cloud Solutions Architect, AWS Subject Matter Expert (SME), AWS Ambassador, and Chairman of Tokonatsu, a Japanese Culture Festival.
+        subtitle: DevOps & Cloud Platform Principle Consultant, AWS Subject Matter Expert (SME), and Chairman of Tokonatsu, a Japanese Culture Festival.
         avatar:
             enabled: true
             local: true
