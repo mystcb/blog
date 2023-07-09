@@ -86,32 +86,38 @@ menu:
           params:
               icon: brand-twitter    
 
-        - identifier: flickr
-          name: Twitter
-          url: https://flickr.com/photos/mystcb
-          params:
-              icon: brand-flickr   
+        # - identifier: flickr
+        #   name: Twitter
+        #   url: https://flickr.com/photos/mystcb
+        #   params:
+        #       icon: brand-flickr   
 
         - identifier: linkedin
-          name: Twitter
+          name: LinkedIn
           url: https://linkedin.com/in/colinbarker
           params:
               icon: brand-linkedin
 
         - identifier: facebook
-          name: Twitter
+          name: Facebook
           url: https://facebook.com/mystcb
           params:
               icon: brand-facebook
 
         - identifier: instagram
-          name: Twitter
+          name: Instagram
           url: https://instagram.com/mystcb
           params:
               icon: brand-instagram
 
         - identifier: youtube
-          name: Twitter
+          name: YouTube
           url: https://youtube.com/mystcb
           params:
               icon: brand-youtube
+
+        - identifier: mastadon
+          name: Mastadon
+          url: https://tokonatsu.social/@myst
+          params:
+              icon: brand-mastodon
