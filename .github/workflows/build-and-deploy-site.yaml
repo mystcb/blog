@@ -11,12 +11,21 @@ jobs:
     permissions:
       id-token: write
       contents: read
+      deployments: write
+      actions: read
     steps:
       - name: Checkout Code
         id: code-checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
+          ref: ${{ github.head_ref || github.ref_name }}
+          
+      - name: Set up NodeJS for Hugo
+        id: setup-node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
       - name: Setup Hugo
         id: hugo-setup
@@ -27,7 +36,7 @@ jobs:
 
       - name: Configure AWS Credentials
         id: aws-credentials-configure
-        uses: aws-actions/configure-aws-credentials@v1-node16
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
@@ -42,7 +51,7 @@ jobs:
         uses: bobheadxi/deployments@v1
         with:
           step: start
-          token: ${{ secrets.REPO_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           env: Prod
           ref: ${{ github.ref }}
 
@@ -57,7 +66,7 @@ jobs:
         if: always()
         with: 
           step: finish
-          token: ${{ secrets.REPO_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           env: Prod
           ref: ${{ github.ref }}
           status: ${{ job.status }}
