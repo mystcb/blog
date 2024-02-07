@@ -23,13 +23,13 @@ jobs:
           
       - name: Set up NodeJS for Hugo
         id: setup-node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       - name: Setup Hugo
         id: hugo-setup
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@main
         with:
           hugo-version: '0.122.0'
           extended: true
@@ -48,7 +48,7 @@ jobs:
 
       - name: Set Deploy Status
         id: deploy-status-start
-        uses: bobheadxi/deployments@v1
+        uses: bobheadxi/deployments@main
         with:
           step: start
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -62,7 +62,7 @@ jobs:
 
       - name: Finish Deploy
         id: deploy-status-finish
-        uses: bobheadxi/deployments@v1
+        uses: bobheadxi/deployments@main
         if: always()
         with: 
           step: finish
