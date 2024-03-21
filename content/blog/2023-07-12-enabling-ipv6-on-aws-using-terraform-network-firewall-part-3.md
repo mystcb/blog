@@ -15,7 +15,7 @@ categories:
 image: https://static.colinbarker.me.uk/img/blog/2023/02/nasa-Q1p7bh3SHj8-unsplash.jpg
 ---
 
-Header photo by [NASA](https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Q1p7bh3SHj8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+> Header photo by [NASA](https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Q1p7bh3SHj8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 ⚠️ **Note**: This is Part 3 of my IPv6 on AWS series, the [first part is available here](/blog/2023-02-11-enabling-ipv6-on-aws-using-terraform/), and the [second part here](/blog/2023-03-04-enabling-ipv6-on-aws-using-terraform-ec2-part-2/)). ⚠️
 

@@ -16,7 +16,7 @@ categories:
 image: https://static.colinbarker.me.uk/img/blog/2023/02/roman-synkevych-wX2L8L-fGeA-unsplash.jpg
 ---
 
-Header photo by [Roman Synkevych 🇺🇦](https://unsplash.com/@synkevych?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/wX2L8L-fGeA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+> Header photo by [Roman Synkevych 🇺🇦](https://unsplash.com/@synkevych?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/wX2L8L-fGeA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 ## What is OpenID?
 

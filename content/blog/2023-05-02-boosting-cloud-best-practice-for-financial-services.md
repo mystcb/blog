@@ -13,7 +13,7 @@ categories:
 image: https://static.colinbarker.me.uk/img/blog/2023/05/alicja-ziajowska-AOjmfr3ofSY-unsplash.jpg
 ---
 
-Header photo by [Alicja Ziajowska](https://unsplash.com/@alicja_photos?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-building-with-columns-and-a-flag-AOjmfr3ofSY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+> Header photo by [Alicja Ziajowska](https://unsplash.com/@alicja_photos?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-building-with-columns-and-a-flag-AOjmfr3ofSY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 
 ## Cloud security fears
 
