@@ -28,7 +28,7 @@ params:
 
     sidebar:
         emoji: 
-        subtitle: AWS Practice Lead & Principle Consultant, AWS Subject Matter Expert (SME), and Chairman of Tokonatsu, a Japanese Culture Festival.
+        subtitle: Head of AWS Practice & Principle Consultant, AWS Subject Matter Expert (SME), and Chairman of Tokonatsu, a Japanese Culture Festival.
         avatar:
             enabled: true
             local: true
@@ -80,11 +80,11 @@ menu:
           params:
               icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
+        - identifier: x
+          name: X
           url: https://twitter.com/mystcb
           params:
-              icon: brand-twitter    
+              icon: brand-x 
 
         # - identifier: flickr
         #   name: Twitter
