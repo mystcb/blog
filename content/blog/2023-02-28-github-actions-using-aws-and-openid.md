@@ -18,6 +18,8 @@ image: https://static.colinbarker.me.uk/img/blog/2023/02/roman-synkevych-wX2L8L-
 
 > Header photo by [Roman Synkevych 🇺🇦](https://unsplash.com/@synkevych?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/wX2L8L-fGeA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
+> Edited: 18th Sept 2024 - As AWS no longer require you to use a thumbprint when setting up the OIDC connection the thumbprint section is no longer needed, however the [Terraform Provider](https://github.com/hashicorp/terraform-provider-aws/issues/32480) still has an open bug for this. Hopefully, once this issue is closed I will remove the section completely!
+
 ## What is OpenID?
 
 Always a good start, understanding what the key component to this whole post is! As always though, I will reference [Wikipedia](https://en.wikipedia.org/wiki/OpenID)
@@ -65,6 +67,8 @@ Using the [walkthrough](https://docs.github.com/en/actions/deployment/security-h
 - The Thumbprint of the endpoint - This one is the tricker one, as you will need to generate this yourself.
 
 ### Generating the thumbprint
+
+> ⚠️ **This section is no longer required** - AWS and GitHub no longer require the setting of thumbprints between them however, the [Terraform Provider for AWS](https://github.com/hashicorp/terraform-provider-aws/issues/32480) still has an open bug as it still requires a value to enter this in. For the best option, just enter in the value `00000000000000000000000000000000000000000`.
 
 This part wasn't as clear in the GitHub documentation, but I went over to the [AWS Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc_verify-thumbprint.html) which gave me instructions on how to generate the thumbprint. You would need a copy of the `openssl` CLI o be able to do this, but the quickest way is as follows:
 
@@ -262,7 +266,7 @@ The AWS CLI will always use the keys over role assumption in it's priority so al
 
 ### Update the Workflow YAML file
 
-For GitHub actions to be able to assume the role, there are two changes that need to be made to the workflow yaml file. The first one, will be the need to enable the workflow to interact with GitHub's OIDC Token endpoint. Part of the assumption process will require us to identify as a web identity from GitHub to have AWS know who we are. As such you will need to add additional `permissions` to the job. Specifically the following 
+For GitHub actions to be able to assume the role, there are two changes that need to be made to the workflow yaml file. The first one, will be the need to enable the workflow to interact with GitHub's OIDC Token endpoint. Part of the assumption process will require us to identify as a web identity from GitHub to have AWS know who we are. As such you will need to add additional `permissions` to the job. Specifically the following
 
 - `id-token` to `write`
 - `contents` to `read`
@@ -303,7 +307,7 @@ There was one other issue, and that was with the `GITHUB_TOKEN` that is used. In
 
 ### Switching to use a Fine-grained PAT
 
-On the 18th of October 2022, GitHub offered up a new service called [Fine-grained personal access tokens](https://github.blog/2022-10-18-introducing-fine-grained-personal-access-tokens-for-github/). The idea is that rather than creating a very open Personal Access Token (PAT), you could create a token that was very limited in it's reach. It is still in beta as I write this blog (28th Feb 2023). 
+On the 18th of October 2022, GitHub offered up a new service called [Fine-grained personal access tokens](https://github.blog/2022-10-18-introducing-fine-grained-personal-access-tokens-for-github/). The idea is that rather than creating a very open Personal Access Token (PAT), you could create a token that was very limited in it's reach. It is still in beta as I write this blog (28th Feb 2023).
 
 Using this beta feature, I was able to create a new token, limiting it to specifically the blog repo, and specific permissions. The screenshot below shows the details about the new PAT. (I am aware I could probably reduce the permissions a little more!)
 
@@ -324,6 +328,6 @@ From here, I added a new respository secret called `REPO_TOKEN` with the value o
 
 ## Round up
 
-Hopefully what I have shown you in this post is how to move away from IAM Credentials, and use the OpenID Connect features of both AWS and GitHub to enable role based assumption to gain access to an S3 bucket that stores, in my case, a static website. 
+Hopefully what I have shown you in this post is how to move away from IAM Credentials, and use the OpenID Connect features of both AWS and GitHub to enable role based assumption to gain access to an S3 bucket that stores, in my case, a static website.
 
 If you do have any questions, comments, please let me know!
