@@ -2,11 +2,13 @@ baseurl:                 https://colinbarker.me.uk/
 languageCode:            en-gb
 title:                   Colin Barker
 theme:                   hugo-theme-stack
-paginate:                5
 DefaultContentLanguage: "en"
 hasCJKLanguage:         false
 disqusShortname         : ""
 googleAnalytics         : ""
+
+pagination:
+    pagerSize: 5
 
 permalinks:
     post: /blog/:slug/
@@ -80,11 +82,11 @@ menu:
           params:
               icon: brand-github
 
-        - identifier: x
-          name: X
-          url: https://twitter.com/mystcb
+        - identifier: bluesky
+          name: Bluesky
+          url: https://bsky.app/profile/faereal.net
           params:
-              icon: brand-x 
+              icon: brand-bluesky 
 
         # - identifier: flickr
         #   name: Twitter
