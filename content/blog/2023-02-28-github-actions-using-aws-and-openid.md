@@ -18,6 +18,8 @@ image: https://static.colinbarker.me.uk/img/blog/2023/02/roman-synkevych-wX2L8L-
 
 > Header photo by [Roman Synkevych 🇺🇦](https://unsplash.com/@synkevych?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/wX2L8L-fGeA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
+> Edited: 12th Jan 2025 - The [AWS SDK](https://github.com/aws/aws-sdk-go/blob/main/CHANGELOG.md#release-v15120-2024-04-11) and the [Terraform AWS Provider](https://github.com/hashicorp/terraform-provider-aws/pull/37255) was updated to make the thumbprint optional! See my latest blog post [here](/blog/2025-01-12-github-actions-oidc-update) for more information.
+
 > Edited: 18th Sept 2024 - As AWS no longer require you to use a thumbprint when setting up the OIDC connection the thumbprint section is no longer needed, however the [Terraform Provider](https://github.com/hashicorp/terraform-provider-aws/issues/32480) still has an open bug for this. Hopefully, once this issue is closed I will remove the section completely!
 
 ## What is OpenID?
