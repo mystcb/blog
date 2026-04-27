@@ -12,4 +12,4 @@ public
 resources
 
 # Any blog post or file thats disabled
-.disabled
+*.disabled

@@ -1,7 +1,7 @@
 ---
 title: AWS
 description: Everything about Amazon Web Services (AWS)
-image: img/aws-logo.png
+image: aws-logo.png
 
 # Badge style
 style:

@@ -2,6 +2,7 @@ baseurl:                 https://colinbarker.me.uk/
 languageCode:            en-gb
 title:                   Colin Barker
 theme:                   hugo-theme-stack
+timeout:                 120s
 DefaultContentLanguage: "en"
 hasCJKLanguage:         false
 disqusShortname         : ""
@@ -17,7 +18,6 @@ permalinks:
 params:
     mainSections:
         - blog
-    featuredImageField: image
     rssFullContent: true
 
     footer:
@@ -25,16 +25,14 @@ params:
         customText:
 
     dateFormat:
-        published: Jan 02, 2006
-        lastUpdated: Jan 02, 2006 15:04 BST    
+        published: ":date_full"
+        lastUpdated: ":date_full"
 
     sidebar:
+        compact: false
         emoji: 
         subtitle: Head of AWS & Managing Consultant, AWS Ambassador, AWS Certification Lead Subject Matter Expert (CLSME), AWS Community Builder, and Chairman of Tokonatsu, a Japanese Culture Festival.
-        avatar:
-            enabled: true
-            local: true
-            src: /img/profile_pic.jpg
+        avatar: /img/profile_pic.jpg
 
     widgets:
         homepage:
@@ -50,6 +48,31 @@ params:
                   limit: 10
         page:
             - type: toc
+
+    article:
+        headingAnchor: false
+        math: false
+        toc: true
+        readingTime: true
+        list:
+            showTags: false
+        license:
+            enabled: false
+            default: "Licensed under CC BY-NC-SA 4.0"
+
+    colorScheme:
+        toggle: true
+        default: auto
+
+    imageProcessing:
+        autoOrient: false
+        external:
+            timeout: "10s"
+        content:
+            widths: [800, 1600, 2400]
+            enabled: true
+        thumbnail:
+            enabled: true
 
 markup:
     goldmark:
