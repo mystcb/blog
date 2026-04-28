@@ -31,7 +31,7 @@ jobs:
         id: hugo-setup
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.124.1'
+          hugo-version: '0.157.0'
           extended: true
 
       - name: Configure AWS Credentials
