@@ -131,7 +131,7 @@ Next I moved onto my home network, this is pretty much the same as the setup of 
 
 At this point, I had to create a number of "Custom Allocations" within the pool, rather than a new sub-pool. This is where the manual reservations came into play. Specifically telling IPAM that these are all reserved and shouldn't be taken.
 
-{{< fancybox2 path="https://static.colinbarker.me.uk/img/blog/2025/07/ipam-9-allocations.png" caption="IPAM Allocations" gallery="gallery" >}}
+{{< fancybox2 path="https://static.colinbarker.me.uk/img/blog/2025/07/ipam-9-custom-allocation.png" caption="IPAM Allocations" gallery="gallery" >}}
 
 Pretty much the same setup for the Tailscale network too, same pool information, same custom allocation, but all within the `100.24.0.0/10` range. This range is Tailscale's range they use which is within the CGNAT private address range. 
 
