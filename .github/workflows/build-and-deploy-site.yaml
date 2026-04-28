@@ -44,7 +44,7 @@ jobs:
       - name: Build Live Site
         id: hugo-site-build
         if: contains( github.ref, 'main')
-        run: hugo --baseURL https://colinbarker.me.uk/ --verbose
+        run: hugo --baseURL https://colinbarker.me.uk/
 
       - name: Set Deploy Status
         id: deploy-status-start
